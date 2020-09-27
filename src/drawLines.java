@@ -5,8 +5,6 @@ import java.awt.event.*;
 public class drawLines extends GraphicsProgram {
 	public void run() {
 		addMouseListeners();
-		addMouseMotionListener(this);
-
 	}
 
 	public void mouseClicked(MouseEvent e) {
