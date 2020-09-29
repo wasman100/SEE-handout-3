@@ -11,6 +11,7 @@ public class drawLines extends GraphicsProgram {
 	public void mouseClicked(MouseEvent e) {
 		double x = e.getX();
 		double y = e.getY();
+		
 
 		line = new GLine(x, y, x, y);
 		line.setStartPoint(x, y);
