@@ -2,9 +2,10 @@ import acm.graphics.*;
 import acm.program.*;
 import java.awt.event.*;
 
-public class drawLines extends GraphicsProgram {
+public class drawLines extends GraphicsProgram implements MouseMotionListener{
 	public void run() {
 		addMouseListeners();
+		addMouseMotionListener(this);
 	}
 
 	public void mouseClicked(MouseEvent e) {
@@ -16,12 +17,14 @@ public class drawLines extends GraphicsProgram {
 	}
 
 	public void mouseMoved(MouseEvent e) {
+
+
+	}
+	public void mouseDragged(MouseEvent e){
 		double x = e.getX();
 		double y = e.getY();
 
 		line.setEndPoint(x, y);
-
 	}
-
 	private GLine line;
 }
