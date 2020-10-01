@@ -13,6 +13,5 @@ public class drawLines extends GraphicsProgram {
 	public void mouseDragged(MouseEvent e){
 		line.setEndPoint(e.getX(), e.getY());
 	}
-    public void mouseReleased(MouseEvent e) {}
 	private GLine line;
 }
